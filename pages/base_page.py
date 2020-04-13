@@ -25,6 +25,10 @@ class BasePage():
             return False
         return True
 
+    def find_element_text(self, how, what):
+        self.browser.find_element(how, what)
+
+
 def solve_quiz_and_get_code(self):
     WebDriverWait(self.browser, 3).until(EC.alert_is_present())
     alert = self.browser.switch_to.alert

@@ -15,3 +15,7 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     ADD_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
+    #NAME_MAIN = (text The shellcoder's handbook)
+    #NAME_ALERT = (<div class="alertinner "> <strong>The shellcoder's handbook</strong> был добавлен в вашу корзину.)
+    #PRICE_VALUE_MAIN = (class= price-color + value 9,99 £)
+    #PRICE_ALERT = (<strong>9,99&nbsp;£</strong>)

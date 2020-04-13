@@ -8,6 +8,10 @@ class ProductPage(BasePage):
         button_1.click()
         solve_quiz_and_get_code(self)
         time.sleep(60)
+        # current_text =
+        # current_price =
+        # alert_text =
+        # alert_price =
         #найти локатор названия книги на главной
         #найти локатор названия книги после добавления
         #найти локатор цены книги на главной
