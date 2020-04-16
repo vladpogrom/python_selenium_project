@@ -8,6 +8,7 @@ class Links():
     PRODUCT_LINK_1 = "http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/?promo=newYear"
     PRODUCT_LINK_2 = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
     PRODUCT_LINK_OFFER = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer"
+    PRODUCT_LINK_CLEAN = "http://selenium1py.pythonanywhere.com/ru/catalogue/coders-at-work_207/"
 
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
