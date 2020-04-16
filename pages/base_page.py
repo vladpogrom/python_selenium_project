@@ -1,10 +1,10 @@
+import math
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 from .locators import BasePageLocators, BasketPageLocators
-import math
 
 
 class BasePage():
@@ -19,7 +19,6 @@ class BasePage():
         self.browser = browser
         self.url = url
         self.browser.implicitly_wait(timeout)
-    # временно закоммитил, чтобы неявные ожидания не мешали тестам с явными ожиданиями
 
     def is_element_present(self, how, what):
         try:
@@ -51,7 +50,6 @@ class BasePage():
             WebDriverWait(self.browser, timeout).until(EC.presence_of_element_located((how, what)))
         except TimeoutException:
             return True
-
         return False
 
     def is_disappeared(self, how, what, timeout=3):
@@ -60,7 +58,6 @@ class BasePage():
                 until_not(EC.presence_of_element_located((how, what)))
         except TimeoutException:
             return False
-
         return True
 
     def go_to_login_page(self):

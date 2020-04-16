@@ -3,7 +3,6 @@ from .base_page import BasePage
 
 
 class BasketPage(BasePage):
-
     def basket_are_empty(self):
         assert self.is_not_element_present(*BasketPageLocators.CHECKOUT_BUTTON), \
             "Basket have any product, but dont"
