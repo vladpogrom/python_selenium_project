@@ -91,3 +91,5 @@ class TestUserAddToBasketFromProductPage():
         page.press_button_add_to_basket()
         page.should_be_message_about_adding()
         page.should_be_message_basket_total()
+
+#pytest -v --tb=line --language=en -m need_review
